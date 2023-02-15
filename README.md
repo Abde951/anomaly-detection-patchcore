@@ -48,7 +48,7 @@ patch_core_loader "${model_flags[@]}" --faiss_on_gpu \
 dataset --resize 366 --imagesize 320 "${dataset_flags[@]}" dataset $datapath
 ```
 
-To use yout pretrained models, check out `sample_evaluation.sh`.
+To use your pretrained models, check out `sample_evaluation.sh`.
 
 ---
 
