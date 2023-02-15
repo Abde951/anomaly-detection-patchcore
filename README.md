@@ -6,7 +6,6 @@ This repository contains the implementation for `PatchCore` as proposed in Roth 
 
 ## Quick Guide
 
-First, clone this repository and set the `PYTHONPATH` environment variable with `env PYTHONPATH=src python bin/run_patchcore.py`.
 To train PatchCore on Your Custom Dataset (as described below), run
 
 ```shell
