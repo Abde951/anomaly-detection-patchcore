@@ -134,11 +134,10 @@ During (after) training, the following information will be stored:
 ```
 
 
-Finally, due to the effectiveness and efficiency of PatchCore, we also incorporate the option to use
-an ensemble of backbone networks and network featuremaps. For this, provide the list of backbones to
-use (as listed in `/src/anomaly_detection/backbones.py`) with `-b <backbone` and, given their
+We also incorporate the option to use an ensemble of backbone networks and network featuremaps. 
+For this, provide the list of backbones to use (as listed in `/bin/patchcore/backbones.py`) with `-b <backbone` and, given their
 ordering, denote the layers to extract with `-le idx.<layer_name>`. An example with three different
-backbones would look something like
+backbones would look something like :
 
 ```shell
 python bin/run_patchcore.py --gpu <gpu_id> --seed <seed> --save_patchcore_model --log_project <log_project> results \
@@ -153,7 +152,7 @@ When using `--save_patchcore_model`, in the case of ensembles, a respective ense
 
 ### Evaluating a pretrained PatchCore model
 
-To evaluate a/our pretrained PatchCore model(s), run
+To evaluate a pretrained PatchCore model(s), run
 
 ```shell
 python bin/load_and_evaluate_patchcore.py --gpu <gpu_id> --seed <seed> $savefolder \
